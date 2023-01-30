@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p1 web dev portfolio</title>
+<style>
+    /* Desktop */
+    *{
+        margin: 0;
+    }
+
+    body{
+        font-family: Sans-Serif;
+    }
+
+    .diagonal-box{
+        width: 100%;
+        height: 600px;
+        background-image: -webkit-linear-gradient(15deg, #bd0707 15%, #000000 15%);
+
+    }
+
+    .photoflex{
+        display: flex;
+    }
+    
+    .photo img{
+        width: 400px;
+        height: 550px;
+        margin-left: 30px;
+        margin-top: 23px;
+    }
+
+    .webdev {
+        margin-left: 270px;
+        margin-top: 120px;
+        padding-right: 50px;
+    }
+
+    .webdev h1{
+        color: #bd0707;
+        font-size: 100px;
+    }
+
+    .webdev h2{
+        color: white;
+        font-size: 70px;
+    }
+
+    .webdev p{
+        color: white;
+        font-size: 25px;
+    }
+    
+    .button {
+        display: block;
+        width: 130px;
+        height: 20px;
+        background: #bd0707;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        color: white;
+        font-weight: bold;
+        line-height: 25px;
+        text-decoration: none;
+        transition: width 1s, height 1s;
+        font-size: 14px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .button:hover{
+        background-color: rgb(238, 51, 5);
+        width: 150px;
+        height: 25px;
+    }
+
+    .boxdetail{
+        margin-left: 200px;
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work, .skill, .project, .contact{
+        margin-bottom: 50px;
+        font-size: 40px;
+        color: white;
+        transition: transform 1.5s;
+    }
+
+    .work:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+
+    .skill:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+
+    .project:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+    
+    .contact:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+    
+    .social{
+        font-size: 30px;
+        position: absolute;
+    }
+
+    .facebook:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+    .tiktok:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+
+    .facebook{
+        color: rgb(0, 0, 0);
+        transition: color 0.5s;
+        position: absolute;
+        left: 0px;
+        top: 100px;
+        border-style: solid;
+        padding-left: 10px;
+        background-color: white;
+        transition: transform 1.5s;
+    }
+
+    .tiktok{
+        color: rgb(0, 0, 0);
+        transition: color 0.5s;
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        border-style: solid;
+        padding-left: 10px;
+        background-color: white;
+        transition: transform 1.5s;
+    }
+
+    .aboutme{
+        display: grid;
+        grid-template-columns: 800px 200px;
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .story{
+        width: 550px;
+        height: 300px;
+        box-shadow: 5px 5px #59CE8F;
+        border-radius: 5px;
+        margin-top: 200px;
+        margin-left: 100px;
+        margin-bottom: 100px;
+    }
+
+    .aboutme h3{
+        font-size: 30px;
+        color: #DC5F00;
+    }
+
+    .aboutme h2{
+        font-size: 50px;
+        color: #DC5F00;
+    }
+
+    .aboutme h4{
+        font-size: 50px;
+        color: #59CE8F;
+    }
+
+    .aboutme p{
+        font-size: 20px;
+        color: #363636;
+    }
+
+    .info{
+        width: 550px;
+        height: 500px;
+        box-shadow: 5px 5px #59CE8F;
+        border-radius: 5px;
+        margin-top: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+
+    .info img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 5px solid #59CE8F;
+    }
+
+    .info td{
+        color: #DC5F00;
+        font-size: 25px;
+    }
+
+    table{
+        margin-left: 130px;
+        border-spacing: 4px;
+    }
+
+    .left{
+        text-align: left;
+    }
+
+    .right{
+        text-align: right;
+    }
+
+    .work-container{
+        display: grid;
+        grid-template-columns: 800px 200px;
+        text-align: center;
+        margin-top: 30px;
+        background-color: #59CE8F;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        width: 100%;
+    }
+
+    .workbox1{
+        width: 550px;
+        height: 420px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .worktable{
+        width: 600px;
+        height: 550px;
+        box-shadow: 5px 5px #DC5F00;
+        border-radius: 5px;
+    }
+
+    .thead{
+        background-color: #E8F9FD;
+        color:#59CE8F;
+        border-radius: 10px;
+        font-size: 35px;
+    }
+
+    .tdyear{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .tdanswer{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .ptable{
+        color: #E8F9FD;
+        font-size: 15px;
+    }
+ 
+    .workbox2{
+        width: 600px;
+        height: 540px;
+        box-shadow: 5px 5px #DC5F00;
+        border-radius: 5px;
+        margin-top: 105px;
+    }
+
+    .workbox2 h2{
+        background-color: #E8F9FD;
+        color:#59CE8F;
+        border-radius: 10px;
+        font-size: 35px;
+        height: 65px;
+        padding-top: 25px;
+    }
+
+    .workbox2 p{
+        font-weight: bolder;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .project-container{
+        width: 100%;
+    }
+
+    .project-container div{
+        color: white;
+        background-color: #000000;
+        text-align: center;
+        font-size: 50px;
+        width: 100%;
+        height: 200px;
+        padding-top: 100px;
+    }
+
+    .contact-container{
+        border-radius: 5px;
+        background-color: white;
+        padding: 20px;
+        width: 100%;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%padding 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .firstname{
+        font-size: 20px;
+        color:white;
+    }
+
+    .lastname{
+        font-size: 20px;
+        color:white;
+    }
+
+    .contactemail{
+        font-size: 20px;
+        color:white;
+    }
+
+    .subjecttext{
+        font-size: 20px;
+        color:white;
+        clear:both;
+    }
+
+    .subjecttext label{
+    }
+
+    .subjecttext textarea{
+        width: 70%;
+    }
+
+    .contactsubmit{
+
+    }
+
+    .cbox{
+        margin: auto;
+        width: 50%;
+        border-radius: 5px;
+        background-color:#59CE8F;
+        padding: 10px;
+    }
+
+    .footer {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-image: -webkit-linear-gradient(15deg, #bd0707 15%, #000000 15%);
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+
+    /* Tablet */
+    @media only screen and (max-width: 768px){
+        .diagonal-box{
+        width: 170%;
+        height: 1700px;
+        background-image: -webkit-linear-gradient(-50deg, #bd0707 25%, #000000 25%);
+        }
+
+        .photoflex{
+            padding-top: 260px;
+        }
+
+        .webdev {
+        margin-left: 150px;
+        }
+
+        .webdev h1{
+            font-size: 150px;
+        }
+
+        .webdev h2{
+            font-size: 80px;
+        }
+
+        .webdev p{
+            font-size: 35px;
+        }
+        
+        .button {
+            width: 270px;
+            height: 70px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 65px;
+        }
+
+        .boxdetail{
+        }
+
+        .work, .skill, .project, .contact{
+            margin-bottom: 50px;
+            font-size: 40px;
+            color: white;
+            transition: transform 1.5s;
+        }
+
+        .aboutme{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+        height: 2000px;
+        }
+
+        .story{
+            width: 550px;
+            height: 300px;
+            box-shadow: 5px 5px #59CE8F;
+            border-radius: 5px;
+            margin-top: 200px;
+            margin-left: 100px;
+            margin-bottom: 100px;
+        }
+
+        .aboutme h3{
+            font-size: 30px;
+            color: #DC5F00;
+        }
+
+        .aboutme h2{
+            font-size: 50px;
+            color: #DC5F00;
+        }
+
+        .aboutme h4{
+            font-size: 50px;
+            color: #59CE8F;
+        }
+
+        .aboutme p{
+            font-size: 20px;
+            color: #363636;
+        }
+
+        .info{
+            width: 550px;
+            height: 500px;
+            box-shadow: 5px 5px #59CE8F;
+            border-radius: 5px;
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+        }
+
+        .info img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #59CE8F;
+        }
+
+        .info td{
+            color: #DC5F00;
+            font-size: 25px;
+        }
+
+        table{
+            margin-left: 130px;
+            border-spacing: 4px;
+        }
+
+        .left{
+            text-align: left;
+        }
+
+        .right{
+            text-align: right;
+        }
+    }
+    
+
+</style>
+</head>
+<body>
+    <section class="diagonal-box">
+        <div class="social">
+            <a class="facebook" href="https://www.facebook.com/sam.valentine.106/">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a class="tiktok" href="https://www.tiktok.com/@ervalmachado">
+                <ion-icon name="logo-tiktok"></ion-icon>
+             </a>
+        </div>
+        
+        <div class="photoflex">
+            <div class="photo">
+                <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t1.18169-9/12923132_1594393540880477_2785888570949613211_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cdbe9c&_nc_ohc=JZsKvBU1_awAX9tPzBN&_nc_ht=scontent.fmnl4-4.fna&oh=00_AfBfJE7gIlbSPlPpFeWIxYPHrG3FBZO7qoghktM6VaYm6g&oe=63FBD7B5"
+                    alt="Erval"
+                >
+            </div>
+
+            <div class="webdev">
+                <h1>&lt;coder&gt;</h1>
+                <h2>Erval Machado</h2>
+                <p>I'm a full stack website developer,<br>
+                a father and husband to my loving<br>family.
+                </p>>
+                <a class="button" href="#aboutme">
+                    More About me &#8594;
+                </a>
+            </div>
+        
+            <div class="boxdetail">
+                    <a class="work" href="#work">
+                        <ion-icon name="accessibility-outline"></ion-icon>
+                    </a>
+
+                    <a class="skill" href="#work">
+                        <ion-icon name="laptop-outline"></ion-icon>
+                    </a>
+
+                    <a class="project" href="#project">
+                        <ion-icon name="document-outline"></ion-icon>
+                    </a>
+
+                    <a class="contact" href="#contact">
+                        <ion-icon name="mail-open-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+        <div class="story">
+            <h3>Hi, I'm</h3>
+            <h2>Erval Machado</h2>
+            <h4>"</h4>
+            <p>I'm an Inside Sales Agent for over 2 years in the 
+                #1 real estate brokerage in USA. My interest in 
+                designing and developing web applications made me 
+                apply in a bootcamp while working full time as an
+                ISA.
+            </p>
+        </div>
+
+        <div class="info">
+            <div>
+                <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/44191091_683633972036260_585840634460372992_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=RwXgggSx-a8AX9cIqJj&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfDms_fieyiVrAA1fZVAeZKfmpJ0tfqbJyN_di1iS9nEQg&oe=63FD382F"
+                     alt="photo"
+                >
+            <table>
+                <tr>
+                    <td class="right">Name:</td>
+                    <td class="left">Erval Machado</td>
+                </tr>
+                <tr>
+                    <td class="right">Age:</td>
+                    <td class="left">28</td>
+                </tr>
+                <tr>
+                    <td class="right">Number:</td>
+                    <td class="left">+63 929 801 5327</td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td class="left">Cavite, PH</td>
+                </tr>
+                <tr>
+                    <td class="right">Email:</td>
+                    <td class="left">ervalmachado@yahoo.com</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="work-container" id="work">
+        <div class="workbox1">
+            <table class="worktable">
+                <tr>
+                    <th class="thead" colspan="2">
+                        TRAINING / EXPERIENCE
+                    </th>
+                </tr>
+                <tr>
+                    <td class="tdyear">Jan 2023 - Jun 2023</td>
+                    <td class="tdanswer">Bootcamp<br><p class="ptable">
+                        Uplift Code Camp</p></td>
+                </tr>
+                <tr>
+                    <td class="tdyear">Sep 2020 - Current</td>
+                    <td class="tdanswer">Head of ISA Division<br><p class="ptable">
+                        Cyberbacker/Keller Williams
+                    </p></td>
+                </tr>
+                <tr>
+                    <td class="tdyear">Jan 2020 - Sep 2020</td>
+                    <td class="tdanswer">ESL Teacher<br><p class="ptable">
+                        ACADSOC
+                    </p></td>
+                </tr>
+                <tr>
+                    <td class="tdyear">Oct 2019 - Dec 2019</td>
+                    <td class="tdanswer">Loan Originator<br><p class="ptable">
+                        ARB Call Facilities
+                    </p></td>
+                </tr>
+                <tr>
+                    <td class="tdyear">Jul 2018 - Sep 2018</td>
+                    <td class="tdanswer">Design Engineer<br><p class="ptable">
+                        Santec Japan
+                    </p></td>
+                </tr>
+            </table>
+        </div>
+        <div class="workbox2">
+            <h2>SKILLS</h2>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Superb Negotiation Skill</p>
+            <p>Good Command Over English</p>
+        </div>
+    </section>
+
+    <section class="project-container" id="project">
+        <div>PROJECT</div>
+    </section>
+
+    <section class="contact-container" id="contact">
+        <div class="cbox">
+        <form action="action_page.php">
+            <div class="firstname">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+
+            <div class="lastname">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
+            </div>
+
+            <div class="contactemail">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Your Email..">
+            </div>
+
+            <div class="subjecttext">
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."
+                    style="height:200px"></textarea>
+            </div>
+
+            <div class="contactsubmit">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&#1692023 Designed and Coded by Erval Machado</p>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
