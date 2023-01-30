@@ -24,6 +24,7 @@
 
     .photoflex{
         display: flex;
+        justify-content: space-between;
     }
     
     .photo img{
@@ -34,7 +35,7 @@
     }
 
     .webdev {
-        margin-left: 270px;
+        /* padding-left: 270px; */
         margin-top: 120px;
         padding-right: 50px;
     }
@@ -54,7 +55,7 @@
         font-size: 25px;
     }
     
-    .button {
+    .button{
         display: block;
         width: 130px;
         height: 20px;
@@ -70,7 +71,7 @@
         font-size: 14px;
     }
 
-    html {
+    html{
         scroll-behavior: smooth;
     }
 
@@ -81,8 +82,9 @@
     }
 
     .boxdetail{
-        margin-left: 200px;
+        /* margin-left: 200px; */
         margin-top: 120px;
+        padding-right: 30px;
         display: flex;
         flex-direction: column;
     }
@@ -392,7 +394,7 @@
     }
 
     /* Tablet */
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 991px){
         .diagonal-box{
         width: 170%;
         height: 1700px;
@@ -437,78 +439,8 @@
             transition: transform 1.5s;
         }
 
-        .aboutme{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        margin-top: 30px;
-        width: 100%;
-        height: 2000px;
-        }
-
         .story{
-            width: 550px;
-            height: 300px;
-            box-shadow: 5px 5px #59CE8F;
-            border-radius: 5px;
-            margin-top: 200px;
-            margin-left: 100px;
-            margin-bottom: 100px;
-        }
-
-        .aboutme h3{
-            font-size: 30px;
-            color: #DC5F00;
-        }
-
-        .aboutme h2{
-            font-size: 50px;
-            color: #DC5F00;
-        }
-
-        .aboutme h4{
-            font-size: 50px;
-            color: #59CE8F;
-        }
-
-        .aboutme p{
-            font-size: 20px;
-            color: #363636;
-        }
-
-        .info{
-            width: 550px;
-            height: 500px;
-            box-shadow: 5px 5px #59CE8F;
-            border-radius: 5px;
-            margin-top: 100px;
-            margin-right: 100px;
-            margin-bottom: 100px;
-        }
-
-        .info img{
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            border: 5px solid #59CE8F;
-        }
-
-        .info td{
-            color: #DC5F00;
-            font-size: 25px;
-        }
-
-        table{
-            margin-left: 130px;
-            border-spacing: 4px;
-        }
-
-        .left{
-            text-align: left;
-        }
-
-        .right{
-            text-align: right;
+            box-shadow: unset;
         }
     }
     
