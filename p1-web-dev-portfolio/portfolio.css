@@ -4,16 +4,18 @@
     }
 
     body{
-        font-family: Sans-Serif;
+        font-family: "Trirong", serif;
     }
 
+    /* Home */
     .diagonal-box{
-        width: 100%;
-        height: 600px;
+        width: 100vw;
+        height: 100vh;
         background-image: -webkit-linear-gradient(15deg, #bd0707 15%, #000000 15%);
 
     }
 
+    /* Home Photo */
     .photoflex{
         display: flex;
         justify-content: space-between;
@@ -26,6 +28,8 @@
         margin-top: 23px;
     }
 
+    /* Home Intro */
+
     .webdev {
         /* padding-left: 270px; */
         margin-top: 120px;
@@ -35,6 +39,7 @@
     .webdev h1{
         color: #bd0707;
         font-size: 100px;
+        font-family: "Audiowide", sans-serif;
     }
 
     .webdev h2{
@@ -73,8 +78,8 @@
         height: 25px;
     }
 
+    /* More */
     .boxdetail{
-        /* margin-left: 200px; */
         margin-top: 120px;
         padding-right: 30px;
         display: flex;
@@ -82,31 +87,33 @@
     }
 
     .work, .skill, .project, .contact{
-        margin-bottom: 50px;
+        margin-bottom: 40px;
         font-size: 40px;
         color: white;
         transition: transform 1.5s;
     }
 
+    .boxdetail p{
+        font-size: 15px;
+    }
+
     .work:hover{
         color: rgb(238, 51, 5);
-        transform: rotate(360deg);
     }
 
     .skill:hover{
         color: rgb(238, 51, 5);
-        transform: rotate(360deg);
     }
 
     .project:hover{
         color: rgb(238, 51, 5);
-        transform: rotate(360deg);
     }
     
     .contact:hover{
         color: rgb(238, 51, 5);
-        transform: rotate(360deg);
     }
+
+    /* Social Media */
     
     .social{
         font-size: 30px;
@@ -118,6 +125,16 @@
         transform: rotate(360deg);
     }
     .tiktok:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+
+    .linkedin:hover{
+        color: rgb(238, 51, 5);
+        transform: rotate(360deg);
+    }
+
+    .github:hover{
         color: rgb(238, 51, 5);
         transform: rotate(360deg);
     }
@@ -146,52 +163,78 @@
         transition: transform 1.5s;
     }
 
+    .linkedin{
+        color: rgb(0, 0, 0);
+        transition: color 0.5s;
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        border-style: solid;
+        padding-left: 10px;
+        background-color: white;
+        transition: transform 1.5s;
+    }
+
+    .github{
+        color: rgb(0, 0, 0);
+        transition: color 0.5s;
+        position: absolute;
+        left: 0px;
+        top: 250px;
+        border-style: solid;
+        padding-left: 10px;
+        background-color: white;
+        transition: transform 1.5s;
+    }
+
+    /* Blog */
+
     .aboutme{
         display: grid;
         grid-template-columns: 800px 200px;
         text-align: center;
-        margin-top: 30px;
+        height: 100vh;
+        padding-left: 70px;
+        padding-top: 50px;
         width: 100%;
     }
 
     .story{
         width: 550px;
-        height: 300px;
+        height: 610px;
         box-shadow: 5px 5px #59CE8F;
         border-radius: 5px;
-        margin-top: 200px;
-        margin-left: 100px;
-        margin-bottom: 100px;
+        padding: 10px;
     }
 
     .aboutme h3{
-        font-size: 30px;
+        font-size: 25px;
         color: #DC5F00;
     }
 
     .aboutme h2{
-        font-size: 50px;
+        font-size: 40px;
         color: #DC5F00;
     }
 
     .aboutme h4{
-        font-size: 50px;
+        font-size: 40px;
         color: #59CE8F;
     }
 
     .aboutme p{
-        font-size: 20px;
+        font-size: 15px;
         color: #363636;
     }
 
+    /* CSV */
+
     .info{
         width: 550px;
-        height: 500px;
+        height: 530px;
         box-shadow: 5px 5px #59CE8F;
         border-radius: 5px;
-        margin-top: 100px;
-        margin-right: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
     }
 
     .info img{
@@ -201,9 +244,18 @@
         border: 5px solid #59CE8F;
     }
 
-    .info td{
-        color: #DC5F00;
-        font-size: 25px;
+    .info p{
+        color:#DC5F00;
+        font-size: 20px;
+    }
+
+    .csv{
+        color: black;
+        font-size: 30px;
+    }
+
+    .csv p{
+        font-size: 10px;
     }
 
     table{
@@ -219,6 +271,8 @@
         text-align: right;
     }
 
+        /* Work / Skill */
+
     .work-container{
         display: grid;
         grid-template-columns: 800px 200px;
@@ -228,6 +282,7 @@
         padding-top: 20px;
         padding-bottom: 60px;
         width: 100%;
+        height: 100vh;
     }
 
     .workbox1{
@@ -289,6 +344,22 @@
         margin-top: 40px;
     }
 
+    .skillsicons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    .skillsicons p{
+        margin: 0;
+        color: white;
+    }
+
+    /* Project */
+
     .project-container{
         width: 100%;
     }
@@ -302,6 +373,8 @@
         height: 200px;
         padding-top: 100px;
     }
+
+    /* Contact */
 
     .contact-container{
         border-radius: 5px;
@@ -366,6 +439,8 @@
         padding: 10px;
     }
 
+    /* Footer */
+
     .footer {
         left: 0;
         bottom: 0;
@@ -378,6 +453,7 @@
         padding-top: 20px;
     }
 
+    /* Media Query */
     /* Tablet */
     @media only screen and (max-width: 991px){
         .diagonal-box{
@@ -519,7 +595,7 @@
             width: 170%;
         }
 
-    /* Phone */
+    /* mobile */
 
     @media only screen and (max-width: 767px){
         .diagonal-box{

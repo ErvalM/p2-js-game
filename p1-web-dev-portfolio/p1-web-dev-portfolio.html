@@ -7,17 +7,24 @@
     <title>p1 web dev portfolio</title>
 
     <link type="text/css" rel="stylesheet" href="portfolio.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 </head>
 <body>
     <section class="diagonal-box">
         <div class="social">
-            <a class="facebook" href="https://www.facebook.com/sam.valentine.106/">
+            <a class="facebook" href="https://www.facebook.com/sam.valentine.106/" target="_blank">
                 <ion-icon name="logo-facebook"></ion-icon>
             </a>
-            <a class="tiktok" href="https://www.tiktok.com/@ervalmachado">
+            <a class="tiktok" href="https://www.tiktok.com/@ervalmachado" target="_blank">
                 <ion-icon name="logo-tiktok"></ion-icon>
-             </a>
+            </a>
+            <a class="linkedin" href="https://www.linkedin.com/in/simply-aesthetic-japan-6591ba266/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a class="github" href="https://github.com/ErvalM/Portfolio.git" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
         </div>
         
         <div class="photoflex">
@@ -41,18 +48,22 @@
             <div class="boxdetail">
                     <a class="work" href="#work">
                         <ion-icon name="accessibility-outline"></ion-icon>
+                        <p>Work</p>
                     </a>
 
                     <a class="skill" href="#work">
                         <ion-icon name="laptop-outline"></ion-icon>
+                        <p>Skill</p>
                     </a>
 
                     <a class="project" href="#project">
                         <ion-icon name="document-outline"></ion-icon>
+                        <p>Project</p>
                     </a>
 
                     <a class="contact" href="#contact">
                         <ion-icon name="mail-open-outline"></ion-icon>
+                        <p>Contact</p>
                     </a>
                 </div>
             </div>
@@ -70,6 +81,26 @@
                 apply in a bootcamp while working full time as an
                 ISA.
             </p>
+            <br>
+            <p>My plan is to be a full-time Web Developer, learn
+                something new everyday that will help me in the future
+                and work my way up as a Web Developer. 
+            </p>
+            <br>
+            <p>I love spending my little bit of free time with my
+                cute son and lovely wife. We all love traveling and
+                going to places we've never been before, trying out
+                restaurants we've never had the chance to dine in,
+                and do activities together that would inspire our
+                adventerer inside us.
+            </p>
+            <br>
+            <p>Most of the time we spend our free time together by
+                just being home, cooking, playing with our son, watching
+                movies, reading books, playing video games and just
+                reminiscing the old times. My wife and son trust me, and 
+                I trust both of them 100%. Everything I do, I do for them.
+            </p>
         </div>
 
         <div class="info">
@@ -77,28 +108,16 @@
                 <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/44191091_683633972036260_585840634460372992_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=174925&_nc_ohc=RwXgggSx-a8AX9cIqJj&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfDms_fieyiVrAA1fZVAeZKfmpJ0tfqbJyN_di1iS9nEQg&oe=63FD382F"
                      alt="photo"
                 >
-            <table>
-                <tr>
-                    <td class="right">Name:</td>
-                    <td class="left">Erval Machado</td>
-                </tr>
-                <tr>
-                    <td class="right">Age:</td>
-                    <td class="left">28</td>
-                </tr>
-                <tr>
-                    <td class="right">Number:</td>
-                    <td class="left">+63 929 801 5327</td>
-                </tr>
-                <tr>
-                    <td>Address:</td>
-                    <td class="left">Cavite, PH</td>
-                </tr>
-                <tr>
-                    <td class="right">Email:</td>
-                    <td class="left">ervalmachado@yahoo.com</td>
-                </tr>
-            </table>
+            <br>
+            <p>learn more about me by </p>
+            <p>downloading my CSV below</p>
+            <p>&#8595;</p>
+            <br>
+            <a class="csv" href="csv/Ervalcsv.pdf" download="csv/Ervalcsv.pdf">
+                <ion-icon name="cloud-download-outline"></ion-icon>
+                <p>Download CSV</p>
+            </a>
+
         </div>
     </section>
 
@@ -143,10 +162,26 @@
         </div>
         <div class="workbox2">
             <h2>SKILLS</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Superb Negotiation Skill</p>
-            <p>Good Command Over English</p>
+            <a class="skillsicons">
+                <ion-icon name="logo-html5"></ion-icon>
+                <p>HTML</p>
+            </a>
+            <a class="skillsicons">
+                <ion-icon name="logo-css3"></ion-icon>
+                <p>CSS</p>
+            </a>
+            <a class="skillsicons">
+                <ion-icon name="logo-javascript"></ion-icon>
+                <p>JavaScript</p>
+            </a>
+            <a class="skillsicons">
+                <ion-icon name="logo-react"></ion-icon>
+                <p>React</p>
+            </a>
+            <a class="skillsicons">
+                <ion-icon name="logo-nodejs"></ion-icon>
+                <p>NodeJS</p>
+            </a>
         </div>
     </section>
 
@@ -158,22 +193,30 @@
         <div class="cbox">
         <form action="action_page.php">
             <div class="firstname">
-                <label for="fname">First Name</label>
+                <label for="fname">
+                    <p>First Name</p>
+                </label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
             </div>
 
             <div class="lastname">
-                <label for="lname">Last Name</label>
+                <label for="lname">
+                    <p>Last Name</p>
+                </label>
                 <input type="text" id="lname" name="lastname" placeholder="Your Last name..">
             </div>
 
             <div class="contactemail">
-                <label for="email">Email</label>
+                <label for="email">
+                    <p>Email</p>
+                </label>
                 <input type="text" id="email" name="email" placeholder="Your Email..">
             </div>
 
             <div class="subjecttext">
-                <label for="subject">Subject</label>
+                <label for="subject">
+                    <p>Subject</p>
+                </label>
                 <textarea id="subject" name="subject" placeholder="Write something.."
                     style="height:200px"></textarea>
             </div>
