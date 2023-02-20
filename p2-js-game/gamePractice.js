@@ -45,7 +45,17 @@ let questions = [{
     'answer': true
 }];
 
+function answerCheck(){
 
+};
+
+trueBtn.addEventListener('click', function(e){
+    answerCheck(true);
+});
+
+falseBtn.addEventListener('click', function(e){
+    answerCheck(false);
+});
 
 
 
