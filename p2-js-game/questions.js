@@ -8,7 +8,7 @@ class Question{
 }
 
 /* Questions */
-export let questions = [];
+let questions = [];
 questions.push(new Question('The maker of this game is Erval.','Erval is the maker! Well, that\'s a bonus, if you chose wrong, then I don\'t know anymore.', true))
 questions.push(new Question('You can use semicolon (;) at the beginning of a line.','Yes, you can', true))
 questions.push(new Question('NaN (not a number) is not a number.','Nan (not a number) is a number.', false))
@@ -19,3 +19,5 @@ questions.push(new Question('this is an inline function: let func = function(){}
 questions.push(new Question('This is an anonymous function: function func(){};.','Nope, it is not', false))
 questions.push(new Question('Mocha was JavaScript\'s original name.','Yes sir! Thankfully, this name didn\'t stick around for long!', true))
 questions.push(new Question('JavaScript was created in just 10 days.','Awesome right? Eich created JavaScript in just 10 days, so what is your excuse?', true))
+
+export default questions

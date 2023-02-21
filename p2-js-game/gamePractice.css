@@ -52,6 +52,10 @@ body {
     text-align: center;
 }
 
+.disabled {
+    pointer-events: none;
+}
+
 /* Game instruction */
 .instruction {
     background-color: #A7727D;
@@ -66,7 +70,9 @@ body {
 /* Questions */
 
 .questiontext {
-    background-color: #F8EAD8;
+    background-color: #EDDBC7;
+    height: 250px;
+    padding: 10px;
 }
 
 /* section */

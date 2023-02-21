@@ -1,22 +1,22 @@
 /* another JS */
-import{questions} from'./questions.js'
+import questions from'./questions.js'
 console.log(questions[1])
+//to do call on randomized questions 
 
 /* HTML to JS */
 const trueBtn = document.querySelector('.true');
 const falseBtn = document.querySelector('.false');
 const nextQuestionBtn = document.querySelector('#nextquestion')
 const userScore = document.querySelector('.scores')
-let counter = 0
-let questionOutput = document.querySelector('.questiontext');
+const questionResponse = document.querySelector('#questionResponse')
+const questionOutput = document.querySelector('.questiontext')
+const restartButton = document.querySelectorAll('.restartButton')
 
 /* JS to HTML */
+let counter = 0
+let questionCounter;
 let questionHeader = document.createElement('h3')
-questionHeader.style.backgroundColor = '#EDDBC7'
-questionHeader.style.height = '250px'
-questionHeader.style.padding = '10px'
 questionOutput.appendChild(questionHeader)
-questionHeader.innerHTML = questions[0].question
 
 // for(let i = 0; i < questions.length; i++){
 //     questions[i] 
@@ -24,31 +24,56 @@ questionHeader.innerHTML = questions[0].question
 
 /* conditions */
 function answerCheck(check){
-    let correctAnswer = document.createElement('p')
-    questionHeader.appendChild(correctAnswer)
-    correctAnswer.innerHTML = questions[0].response
-    trueBtn.setAttribute('disabled', true)
-    falseBtn.setAttribute('disabled', true)
+    console.log(questions[questionCounter].response)
+    questionResponse.textContent = questions[questionCounter].response
+    trueBtn.classList.add('disabled')
+    falseBtn.classList.add('disabled')
     nextQuestionBtn.classList.remove('hide')
     if(check == true){
         counter++
         userScore.innerHTML = counter 
-    }else{  }
+    }
+    // else{  }
 };
 
+function randomQuestions() {
+    for (let i = 0; i < questions.length; i++) {
+        let j = Math.floor(Math.random() * questions.length);
+        let temp = questions[i];
+        questions[i] = questions[j];
+        questions[j] = temp;
+        questionCounter = j
+        questionHeader.innerHTML = questions[j].question
+    }
+    console.log(questions);
+}
+randomQuestions()
+
 /* buttons */
-trueBtn.addEventListener('click', function(e){
+trueBtn.addEventListener('click', function(){
     answerCheck(true);
 });
 
-falseBtn.addEventListener('click', function(e){
+falseBtn.addEventListener('click', function(){
     answerCheck(false);
 });
 
 nextQuestionBtn.addEventListener('click', function(){
-    questions
+    if (questionCounter < questions.length - 1){
+        questionCounter++
+    }
+    console.log(questions[questionCounter].question)
+    questionHeader.textContent = questions[questionCounter].question;
+    questionResponse.textContent = ''
+    nextQuestionBtn.classList.add('hide')
+    trueBtn.classList.remove('disabled')
+    falseBtn.classList.remove('disabled')
 });
 
+restartButton.addEventListener('click', function(){
+   document.location.reload(true);
+
+})
 
 
 
