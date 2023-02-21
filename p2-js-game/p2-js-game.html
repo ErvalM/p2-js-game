@@ -10,23 +10,32 @@
 </head>
 <body>
 
-    <h2>Answer the question:</h2>
-    <div class="questionbox">
-        <span class="questiontext">
-            
-        </span>
-        <button class="true">TRUE</button>
-        <button class="false">FALSE</button>
-    </div>
+    <section>
+        <h2 class="instruction">Answer the question:
+            <p>Let's see how deep you know JavaScript</p>
+        </h2>
 
-    <button id="nextquestion" class="hide">
-        NEXT QUESTION
-    </button>
-    <button id="reset" class="restart-button">
-        RE-START
-    </button>
-    <h2>Score: <span class="scores">0</span >/10</h2>
+        <div class="questionbox">
+            <span class="questiontext"></span>
 
+            <div class="answerButton">
+                <button class="true">TRUE</button>
+                <button class="false">FALSE</button>
+            </div>
+        </div>
+
+        <button id="reset" class="restart-button">
+            QUIT GAME
+        </button>
+        <button id="reset" class="restart-button">
+            RESTART
+        </button>
+        
+        <button id="nextquestion" class="hide">
+            NEXT QUESTION
+        </button>
+        <h2>Score: <span class="scores">0</span >/10</h2>
+    </section>
 
     <script src="gamePractice.js" type="module"></script>
 </body>

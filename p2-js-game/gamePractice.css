@@ -1,3 +1,116 @@
+body {
+    width: 100%;
+    background-color: #F8EAD8;
+    padding: 0;
+}
+
+/* Hidder */
 .hide{
     visibility: hidden;
+}
+
+/* True False Button */
+.true {
+    width: 164px;
+    height: 164px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    border: 10px solid #444444;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.8) inset;
+    transform: rotate(-20deg);
+    color:#19f000;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.true:hover {
+    background-color: #19f000;
+    color: white;
+}
+
+.false {
+    width: 164px;
+    height: 164px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    border: 10px solid #444444;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.8) inset;
+    transform: rotate(-20deg);
+    color:#d60505;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.false:hover {
+    background-color: #d60505;
+    color: white;
+}
+
+.answerButton {
+    text-align: center;
+}
+
+/* Game instruction */
+.instruction {
+    background-color: #A7727D;
+    height: 100%;
+    text-align: center;
+}
+
+.instruction p {
+    font-size: 20px;
+}
+
+/* Questions */
+
+.questiontext {
+    background-color: #F8EAD8;
+}
+
+/* section */
+
+section {
+    background-color: #F9F5E7;
+    border: solid black 1px;
+    margin: auto;
+    width: 70%;
+}
+
+/* Media Query */
+
+/* Ipad */
+@media only screen and (max-width: 768px) {
+
+    section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .true {
+        width: 120px;
+        height: 120px;
+    }
+
+    .false {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 395px) {
+
+    .true {
+        width: 100px;
+        height: 100px;
+    }
+
+    .false {
+        width: 100px;
+        height: 100px;
+    }
+
+
 }

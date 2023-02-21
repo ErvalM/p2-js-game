@@ -1,3 +1,4 @@
+/* My method rules: Object */
 class Question{
     constructor(question, response, answer){
         this.question = question;
@@ -6,8 +7,9 @@ class Question{
     }
 }
 
+/* Questions */
 export let questions = [];
-questions.push(new Question('The maker of this game is Erval.','yes yoh!', true))
+questions.push(new Question('The maker of this game is Erval.','Erval is the maker! Well, that\'s a bonus, if you chose wrong, then I don\'t know anymore.', true))
 questions.push(new Question('You can use semicolon (;) at the beginning of a line.','Yes, you can', true))
 questions.push(new Question('NaN (not a number) is not a number.','Nan (not a number) is a number.', false))
 questions.push(new Question('JavaScript is also known as Jscript.','Jscript is a relative of JavaScript.', false))
