@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* logo */
 div {
     text-align: center;
 }
@@ -21,15 +22,13 @@ h1 {
 
 .check {
     color: #06FF00;
-    border: 0; 
-    margin: 0;
-    padding: 0;
 }
 
 .cross {
-    color: #FF1700
+    color: #FF1700;
 }
 
+/* Start Button */
 .button {
     display: inline-block;
     padding: 15px 25px;

@@ -7,10 +7,7 @@ body {
     padding: 0;
 }
 
-/* Hidder */
-.hide{
-    visibility: hidden;
-}
+/* Buttons */
 
 /* True False Button */
 .true {
@@ -61,6 +58,66 @@ body {
     pointer-events: none;
 }
 
+/* Quit Game Button */
+.button {
+    background-color: #FFC074;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+
+/* Restart Button */
+#reset {
+    background-color: #B6C867;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#reset:hover {opacity: 1}
+
+/* Next Question Button */
+.hide {
+    visibility: hidden;
+}
+
+#nextquestion {
+    background-color: #01937C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Score */
+.scorer {
+    float: right;
+    margin-right: 5px;
+    color: #4A3933;
+}
+
 /* Game instruction */
 .instruction {
     background-color: #A7727D;
@@ -87,6 +144,31 @@ section {
     border: solid black 1px;
     margin: auto;
     width: 70%;
+}
+
+/* logo */
+
+div {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: #FC0 5px 5px 10px;
+    font-size: 10vh;
+    letter-spacing: -1px;
+    line-height: 0.7;
+}
+
+.check {
+    color: #06FF00;
+    border: 0; 
+    margin: 0;
+    padding: 0;
+}
+
+.cross {
+    color: #FF1700
 }
 
 /* Media Query */
