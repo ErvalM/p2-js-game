@@ -1,0 +1,57 @@
+body {
+    background: -webkit-linear-gradient(right, #79D70F 50%, #D32626 50%);
+    background: -o-linear-gradient(right, #79D70F 50%, #D32626 50%);
+    background: -moz-linear-gradient(right, #79D70F 50%, #D32626 50%);
+    background: linear-gradient(to right, #79D70F 50%, #D32626 50%);
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: #FC0 5px 5px 10px;
+    font-size: 20vh;
+    letter-spacing: -1px;
+    line-height: 0.7;
+}
+
+.check {
+    color: #06FF00;
+    border: 0; 
+    margin: 0;
+    padding: 0;
+}
+
+.cross {
+    color: #FF1700
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 5vh;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: initial;
+    background: #FFE9A0;
+    border: none;
+    border-radius: 50px;
+    box-shadow: #FC0 5px 5px 10px;
+  }
+  
+  .button:hover {
+    background-color: #367E18;
+    color: white;
+}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
