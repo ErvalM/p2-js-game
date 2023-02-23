@@ -86,24 +86,13 @@ resetBtn.addEventListener('click', function(){
    location.reload()
 })
 
-
 function gameOver(){
-    alert ('game over')
+    localStorage.setItem('score', counter.toString())
+    window.location.replace('http://127.0.0.1:5500/project/p2-js-game/p2-end-page.html')
+    // const endScore = document.getElementById('endScore')
+    // endScore.textContent = localStorage.getItem('score')
+        // alert (`Congratulations! You've finished the quiz, your score is: ${counter}/30.`)
 }
 
 
 
-//compare user input with questions[0] compare with the value
-//show correct answer (hiden . only shows up when answer of user is given)
-//is right? so earn +20p & next question ! is right?  -20p next question
-
-//button for quit (with a bit troll message)
-//button for restart (with troll message)
-
-//design last
-
-
-//bug:
-//after few next question, question repeats endlessly.
-//false doesn't give score, only true button regardless if the answer is right or wrong
-//restart button not working 
