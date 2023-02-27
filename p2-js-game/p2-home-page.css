@@ -145,3 +145,28 @@ h1 {
     color: #FFEAC9;
     text-decoration: none;
 }
+
+/* Media Query */
+/* Tablet */
+@media only screen and (max-width: 768px){
+    body {
+        background: black;
+    }     
+    .rules {
+        margin-top: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: #79D70F;
+        color: white;
+    }
+
+}
+
+/* Phone */
+@media only screen and (max-width: 376px){
+    .rules {
+        width: 250px;
+        height: 830px;
+    }
+}

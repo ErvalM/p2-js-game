@@ -177,7 +177,7 @@ h1 {
 @media only screen and (max-width: 768px) {
 
     section {
-        width: 100%;
+        width: 98%;
         margin: 0;
     }
 
@@ -205,5 +205,19 @@ h1 {
         height: 100px;
     }
 
+    .scorer {
+        font-size: 20px;
+    }
 
+    #reset {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    #nextquestion {
+        font-size: 10px;
+    }
 }
