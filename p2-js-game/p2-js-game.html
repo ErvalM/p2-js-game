@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True or False | JavaScript Quiz</title>
+
+    <link rel="stylesheet" href="gamePractice.css">
+</head>
+<body>
+
+    <section>
+        <h2 class="instruction">Answer the question:
+            <p>Let's see how deep you know JavaScript</p>
+        </h2>
+
+        <div class="questionbox">
+            <div class="questiontext">
+                <p id="questionResponse"></p>
+            </div>
+            <button id="nextquestion" class="hide">
+                NEXT QUESTION >>
+            </button>
+            <div class="answerButton">
+                <button class="true">TRUE</button>
+                <button class="false">FALSE</button>
+            </div>
+        </div>
+
+        <a href="http://127.0.0.1:5500/project/p2-js-game/p2-home-page.html" class="button">
+            QUIT GAME
+        </a>
+        <button id="reset">
+            RESTART
+        </button>
+        
+        <h2 class="scorer">Score: <span class="scores">0</span >/30</h2>
+    </section>
+
+    <div>
+        <h1>
+            <span class="check">
+                &#10004;
+            </span>
+                True
+                <br>
+                False
+            <span class="cross">
+                &#10005;
+            </span>
+        </h1>
+    </div>
+
+    
+    <script src="gamePractice.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+body {
+    background: -webkit-linear-gradient(right, #79D70F 50%, #D32626 50%);
+    background: -o-linear-gradient(right, #79D70F 50%, #D32626 50%);
+    background: -moz-linear-gradient(right, #79D70F 50%, #D32626 50%);
+    background: linear-gradient(to right, #79D70F 50%, #D32626 50%);
+    width: 100%;
+    padding: 0;
+}
+
+/* Buttons */
+
+/* True False Button */
+.true {
+    width: 164px;
+    height: 164px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    border: 10px solid #444444;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.8) inset;
+    transform: rotate(-20deg);
+    color:#19f000;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.true:hover {
+    background-color: #19f000;
+    color: white;
+}
+
+.false {
+    width: 164px;
+    height: 164px;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    border: 10px solid #444444;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.8) inset;
+    transform: rotate(-20deg);
+    color:#d60505;
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.false:hover {
+    background-color: #d60505;
+    color: white;
+}
+
+.answerButton {
+    text-align: center;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+/* Quit Game Button */
+.button {
+    background-color: #FFC074;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+
+/* Restart Button */
+#reset {
+    background-color: #B6C867;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px 5px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#reset:hover {opacity: 1}
+
+/* Next Question Button */
+.hide {
+    visibility: hidden;
+}
+
+#nextquestion {
+    background-color: #01937C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+    margin: 5px 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Score */
+.scorer {
+    float: right;
+    margin-right: 5px;
+    color: #4A3933;
+}
+
+/* Game instruction */
+.instruction {
+    background-color: #A7727D;
+    height: 100%;
+    text-align: center;
+}
+
+.instruction p {
+    font-size: 20px;
+}
+
+/* Questions */
+
+.questiontext {
+    background-color: #EDDBC7;
+    height: 250px;
+    padding: 10px;
+}
+
+/* section */
+
+section {
+    background-color: #F9F5E7;
+    border: solid black 1px;
+    margin: auto;
+    width: 70%;
+}
+
+/* logo */
+
+div {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: #FC0 5px 5px 10px;
+    font-size: 10vh;
+    letter-spacing: -1px;
+    line-height: 0.7;
+}
+
+.check {
+    color: #06FF00;
+    border: 0; 
+    margin: 0;
+    padding: 0;
+}
+
+.cross {
+    color: #FF1700
+}
+
+/* Media Query */
+
+/* Ipad */
+@media only screen and (max-width: 768px) {
+
+    section {
+        width: 98%;
+        margin: 0;
+    }
+
+    .true {
+        width: 120px;
+        height: 120px;
+    }
+
+    .false {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 395px) {
+
+    .true {
+        width: 100px;
+        height: 100px;
+    }
+
+    .false {
+        width: 100px;
+        height: 100px;
+    }
+
+    .scorer {
+        font-size: 20px;
+    }
+
+    #reset {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
+
+    #nextquestion {
+        font-size: 10px;
+    }
+}
